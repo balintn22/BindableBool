@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0;net7.0</TargetFrameworks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>YA.$(AssemblyName)</PackageId>
+    <Authors>Balint Nagy</Authors>
+    <Description>A bool representation with IsTrue and IsFalse properties, to help WPF, Xamarin, Maui IsVisible (or IsNotVisible) binding.</Description>
+    <Copyright>2003 Balint Nagy</Copyright>
+    <PackageProjectUrl>https://github.com/balintn22/BindableBool</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/balintn22/BindableBool</RepositoryUrl>
+    <PackageTags>WPF Maui Xamarin IsVisible Binding</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

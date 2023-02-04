@@ -10,6 +10,11 @@ BindableBool implements IsTrue and IsFalse, so that IsVisible can be bound direc
 In your viewModel:
 
     public BindableBool HasData { get => _myList?.Any() ?? false; }
+    
+  when the collection changes, dot forget to
+  
+    OnPropertyChanged(nameof(HasData));
+
 
 In your view:
 

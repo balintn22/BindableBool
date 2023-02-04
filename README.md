@@ -11,7 +11,7 @@ In your viewModel:
 
     public BindableBool HasData { get => _myList?.Any() ?? false; }
     
-  when the collection changes, dot forget to
+  when the collection changes, don't forget to
   
     OnPropertyChanged(nameof(HasData));
 
